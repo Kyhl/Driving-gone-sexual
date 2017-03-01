@@ -37,7 +37,7 @@ void loop() {
   //Sender signalet (retning) og hastighed til app'en. Kan findes i div-element "fraArduino".
   bluetooth.print(msg);
   bluetooth.println(Speed);
-  //Sætter default-speeden
+  //Updaterer mængden af strøm der bliver sendt til motorerne
   analogWrite(enable1,Speed);
   analogWrite(enable2,Speed);
   delay(10);
