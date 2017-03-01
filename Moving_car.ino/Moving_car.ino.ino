@@ -137,10 +137,14 @@ void modtagFraBluetooth(){
     backwards();
   } else if (msg =='a'){
     forward();
+  } else {
+    Stop(); 
   }
   if(msg =='+'){
     speedup();
   } else if(msg =='-') {
     slowdown();
+  } else {
+    Stop();
   }
 }
